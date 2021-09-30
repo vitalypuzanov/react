@@ -48,10 +48,8 @@ function App() {
       if (note.id === updatedNote.id) {
         return updatedNote;
       }
-
       return note;
     });
-
     setNotes(updatedNotesArr);
   };
 
