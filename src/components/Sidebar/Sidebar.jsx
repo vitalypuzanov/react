@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Sidebar.scss';
+
 function Sidebar({notes, onAddNote, onDeleteNote, activeNote, setActiveNote}) {
   return (
     <div className="app-sidebar">

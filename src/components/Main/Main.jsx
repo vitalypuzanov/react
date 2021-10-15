@@ -1,4 +1,5 @@
 import React from 'react';
+import './Main.scss';
 
 function Main({activeNote, onUpdateNote}) {
   const onEditField = (key, value) => {
@@ -9,7 +10,9 @@ function Main({activeNote, onUpdateNote}) {
     });
   };
 
-  if (!activeNote) return <div className="no-active-note">No notes</div>;
+  if (!activeNote) {
+    return <div className="no-active-note">No notes</div>;
+  }
 
   return (
     <div className="app-main">
